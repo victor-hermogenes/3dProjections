@@ -20,7 +20,7 @@ class Object3D:
 
     def movement(self):
         if self.movement_flag:
-            self.rotate_x(pg.time.get_ticks() % 0.005)
+            self.rotate_y(pg.time.get_ticks() % 0.005)
 
     def screen_projection(self):
         vertexes = self.vertexes @ self.render.camera.camera_matrix()
